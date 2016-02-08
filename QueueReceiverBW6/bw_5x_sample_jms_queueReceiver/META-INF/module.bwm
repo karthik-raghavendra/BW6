@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_NE0GAMvPEeW036J9GD7hWA" targetNamespace="http://tns.tibco.com/bw/composite/bw_5x_sample_jms_queueReceiver" name="bw_5x_sample_jms_queueReceiver" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_NE0GAcvPEeW036J9GD7hWA" name="Deployment" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GAsvPEeW036J9GD7hWA" name="DirLedger" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GA8vPEeW036J9GD7hWA" name="DirTrace" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GBMvPEeW036J9GD7hWA" name="Domain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GBcvPEeW036J9GD7hWA" name="HawkEnabled" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GBsvPEeW036J9GD7hWA" name="JmsProviderUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GB8vPEeW036J9GD7hWA" name="JmsSslProviderUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GCMvPEeW036J9GD7hWA" name="RemoteRvDaemon" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GCcvPEeW036J9GD7hWA" name="RvDaemon" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GCsvPEeW036J9GD7hWA" name="RvNetwork" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GC8vPEeW036J9GD7hWA" name="RvService" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GDMvPEeW036J9GD7hWA" name="RvaHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GDcvPEeW036J9GD7hWA" name="RvaPort" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GDsvPEeW036J9GD7hWA" name="TIBHawkDaemon" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GD8vPEeW036J9GD7hWA" name="TIBHawkNetwork" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GEMvPEeW036J9GD7hWA" name="TIBHawkService" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GEcvPEeW036J9GD7hWA" name="BW.APPNODE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GEsvPEeW036J9GD7hWA" name="BW.DOMAIN.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GE8vPEeW036J9GD7hWA" name="BW.HOST.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GFMvPEeW036J9GD7hWA" name="BW.MODULE.VERSION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GFcvPEeW036J9GD7hWA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GFsvPEeW036J9GD7hWA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GF8vPEeW036J9GD7hWA" name="BW.APPSPACE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GGMvPEeW036J9GD7hWA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NE0GGcvPEeW036J9GD7hWA" name="BW.MODULE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_NZFF0MvPEeW036J9GD7hWA" name="QueueReceiverComponent" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_NZFF0cvPEeW036J9GD7hWA" processName="QueueReceiver"/>
+  </sca:component>
+</sca:composite>

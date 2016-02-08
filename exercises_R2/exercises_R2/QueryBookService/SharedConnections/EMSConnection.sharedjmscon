@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BWSharedResource>
+    <name>EMSConnection</name>
+    <resourceType>ae.shared.JMSConnectionKey</resourceType>
+    <config>
+        <NamingEnvironment>
+            <UseJNDI>false</UseJNDI>
+            <ProviderURL>%%SharedConnections/EMS/EMSServerURL%%</ProviderURL>
+            <NamingURL>tibjmsnaming://localhost:7222</NamingURL>
+            <NamingInitialContextFactory>com.tibco.tibjms.naming.TibjmsInitialContextFactory</NamingInitialContextFactory>
+            <TopicFactoryName>TopicConnectionFactory</TopicFactoryName>
+            <QueueFactoryName>QueueConnectionFactory</QueueFactoryName>
+            <NamingPrincipal>admin</NamingPrincipal>
+            <NamingCredential/>
+        </NamingEnvironment>
+        <ConnectionAttributes>
+            <username>%%SharedConnections/EMS/EMSUser%%</username>
+            <password>%%SharedConnections/EMS/EMSPassword%%</password>
+            <clientID/>
+            <autoGenClientID>true</autoGenClientID>
+        </ConnectionAttributes>
+        <UseXACF>false</UseXACF>
+        <UseSharedJndiConfig>false</UseSharedJndiConfig>
+    </config>
+</BWSharedResource>

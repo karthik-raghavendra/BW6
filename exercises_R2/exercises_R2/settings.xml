@@ -1,0 +1,32 @@
+ <settings>
+ <profiles>
+   <profile>
+     <id>tibco_dev_home</id>
+     <properties>
+         <PSP>\</PSP>
+         <tibco.home>d:${PSP}tibco</tibco.home>
+         <tibco.tra.home>${tibco.home}${PSP}tra${PSP}5.9</tibco.tra.home>
+         <buildEAR>${tibco.tra.home}/bin/buildear.exe</buildEAR>
+         <appManage>${tibco.tra.home}/bin/AppManage.exe</appManage>
+
+         <serviceName>QueryBookService</serviceName>
+         <tibco.BusinessWorksProject>D:\projects\ngad\tibco\maven\exercises\QueryBookService</tibco.BusinessWorksProject>
+         <dtl>D:\projects\ngad\tibco\maven\exercises\dtl.xml</dtl>
+
+         <tibco.BusinessWorksArchive>/Archive/QueryBookService.archive</tibco.BusinessWorksArchive>
+         <tibco.deploy.ArchiveFileName>D:\projects\ngad\tibco\maven\exercises\EAR\QueryBookService.ear</tibco.deploy.ArchiveFileName>
+         <tibco.deploy.XMLFileName>D:\projects\ngad\tibco\maven\exercises\EAR\QueryBookService.xml</tibco.deploy.XMLFileName>
+         <tibco.deploy.deployXMLFileName>D:\projects\ngad\tibco\maven\exercises\EAR\QueryBookService_modified.xml</tibco.deploy.deployXMLFileName>
+         <tibco.deploy.ServiceLocation>/Examples/QueryBookService</tibco.deploy.ServiceLocation>
+         <tibco.DOMAIN>TIBCO_DEV</tibco.DOMAIN>
+         <tibco.DOMAIN.user>admin</tibco.DOMAIN.user>
+	 <tibco.DOMAIN.password>admin</tibco.DOMAIN.password>
+	 <tibco.Deploy.UserName>Raghu</tibco.Deploy.UserName>
+     </properties>
+   </profile>
+  </profiles>
+ 
+  <activeProfiles>
+    <activeProfile>tibco_dev_home</activeProfile>
+  </activeProfiles>
+</settings>

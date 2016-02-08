@@ -1,0 +1,44 @@
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>configXML</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>com.google.code.maven-replacer-plugin</groupId>
+            <artifactId>replacer</artifactId>
+            <version>1.5.1</version>
+            <executions>                
+                <execution>
+                    <phase>prepare-package</phase>
+                    <goals>
+                        <goal>replace</goal>
+                    </goals>                    
+                </execution>
+            </executions>
+
+            <configuration>
+                <delimiters>
+  		  <delimiter>%</delimiter> 
+                </delimiters>
+
+<!--                <file>D\:\\projects\\ngad\\tibco\\maven\\exercises\\EAR\\QueryBookService.xml</file>
+                <file>${tibco.deploy.XMLFileName}</file>
+                <file>${inputDataFile}</file> -->
+<!--                <outputFile>${tibco.deploy.deployFileName}</outputFile>-->
+
+
+                <file>EAR\QueryBookService.xml</file>
+                <tokenValueMap>tibco_DEV.properties</tokenValueMap>
+                <outputFile>EAR\QueryBookService_modified.xml</outputFile> 
+                <workingDirectory>${tibco.tra.home}/bin</workingDirectory>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+</project>

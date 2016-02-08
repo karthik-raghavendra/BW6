@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.generalactivities)"
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+TIBCO-BW-Version: 6.2.2 V18 2015-07-14
+Bundle-Version: 1.0.0.201602080331
+Bundle-Name: Test Module
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Bundle-ManifestVersion: 2
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+Bundle-SymbolicName: Test.module
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+

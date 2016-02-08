@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ClassPath: .
+Bundle-Name: bw_5x_sample_jms_queueReceiver
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.generalactivities)",com.tibco.bw.pal
+ ette; filter:="(name=bw.jms)",com.tibco.bw.sharedresource.model; filt
+ er:="(name=bw.jmsconnection)",com.tibco.bw.sharedresource.model; filt
+ er:="(name=bw.jndiconfiguration)"
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-Version: 6.2.2 V18 2015-07-14
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Bundle-Version: 1.0.0.201602081249
+Bundle-ManifestVersion: 2
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Bundle-SymbolicName: bw_5x_sample_jms_queueReceiver
+

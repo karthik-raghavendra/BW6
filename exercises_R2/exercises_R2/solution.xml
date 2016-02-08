@@ -1,0 +1,65 @@
+Hi,
+
+An update,
+I was able to solve the Issue by using <delimiters>, and when I used % as the token, as below.
+
+	<build>
+	    <plugins>
+		<plugin>
+		    <groupId>com.google.code.maven-replacer-plugin</groupId>
+		    <artifactId>replacer</artifactId>
+		    <version>1.5.2</version>
+		    <executions>                
+			<execution>
+			    <phase>prepare-package</phase>
+			    <goals>
+				<goal>replace</goal>
+			    </goals>                    
+			</execution>
+		    </executions>
+		    <configuration>
+			<delimiters>
+			  <delimiter>%</delimiter> 
+			</delimiters>
+			<file>${inputFile}</file>
+			<tokenValueMap>DEV_properties.txt</tokenValueMap>
+			<outputFile>${outFileName}</outputFile>
+		    </configuration>
+		</plugin>
+	    </plugins>
+	</build>
+
+The could change the input file containing tokens
+	 <field>
+	     <name>HTTP/Server</name>    
+	     <value>%Server%</value>
+	 </field>
+
+to
+
+	 <field>
+	     <name>HTTP/Server</name>
+	     <value>QA_Application_Server11</value>
+	 </field>
+
+as expected.
+
+I would have loved to have ${Var} changed as mentioned in the problem.
+But this solves the requirement.
+
+Thanks for the below post,
+	http://stackoverflow.com/questions/3442545/managing-google-maps-api-keys/5985674#5985674
+
+
+Regards
+-Raghu
+
+
+
+
+When I specified the delimiter as below, somehow it is not working.
+		  <delimiter>${}</delimiter>
+
+Thanks again for the suggestions provided.
+
+Learnt a lot, by looking for solutions using filtering and 

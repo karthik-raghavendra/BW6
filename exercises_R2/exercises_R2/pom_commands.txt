@@ -1,0 +1,114 @@
+D:\projects\ngad\tibco\maven\exercises
+
+pom_cmd_exec_1.xml
+* mvn clean -f pom_buildEAR.xml
+* mvn verify -f pom_buildEAR.xml
+mvn compile -f pom_buildEAR.xml
+
+mvn clean -f pom_appmanageXMLExport.xml
+mvn verify -f pom_appmanageXMLExport.xml
+
+*mvn verify -f pom_appmanageXMLDeploy.xml
+-propVar machine=LP-1CC1DE9F81E3
+
+*mvn verify -f pom_appmanageServiceStart.xml
+
+*mvn verify -f pom_appmanageServiceStop.xml
+
+*mvn verify -f pom_appmanageServiceUndeploy.xml
+
+*mvn verify -f pom_appmanageServiceDelete.xml
+
+Issues
+==========================================================
+Issue 1
+-------
++1. Failed to open properties file:
+   D:\projects\ngad\tibco\maven\exercises\target\classe
++1.1 Failed to open properties file: --propfile  (2 occurrences of <argument>--propFile</argument>)
++2. Adjustment failed.
+Fix 1
+-----
+File: pom_buildEAR_1.xml 
+Changes: Added arguments 
+              <argument>--propFile</argument>
+              <argument>C:/tibco/classic/tra/5.9/bin/buildear.tra</argument>
+
+Changed to
+          <arguments>
+              <argument>--propFile</argument>
+              <argument>C:/tibco/classic/tra/5.9/bin/buildear.tra</argument>
+          </arguments>
+          <workingDirectory>C:/tibco/classic/tra/5.9/bin</workingDirectory>
+
+Result: pom_outputs.txt#Output1
+* Insufficient input: Need to specify the required parameters
+
+==========================================================
+Changes
+-------
+1. Add the remaining properies
+
+==========================================================
+Result1: Issue 1
+----------------
++1. 
++2. 
+Fix 1
+-----
+File: pom_buildEAR_?.xml 
+Changes
+-------
+Added arguments 
+Changed to pom_buildEAR.xml
+1. Add more parameters to pom_buildEAR.xml.
+Result: pom_outputs.txt#Output1
+
+
+==========================================================
+Result2: Success 1
+------------------
++1. EAR Created successfully.
++2. 
+Result: pom_outputs.txt#Output2
+
+
+==========================================================
+
+Issue 1
+-------
++1. 
++1.1 
++2. 
+Fix 1
+-----
+File: pom_buildEAR_?.xml 
+Changes: Added arguments 
+Changed to
+Result: pom_outputs.txt#Output1
+
+
+==========================================================
+
+Issue 1
+-------
++1. 
++1.1 
++2. 
+Fix 1
+-----
+File: pom_buildEAR_?.xml 
+Changes: Added arguments 
+Changed to
+Result: pom_outputs.txt#Output1
+
+
+==========================================================
+
+
+
+
+Hello World
+* mvn clean -f pom_HelloWorld.xml
+* mvn verify -f pom_HelloWorld.xml
+* mvn compile -f pom_HelloWorld.xml

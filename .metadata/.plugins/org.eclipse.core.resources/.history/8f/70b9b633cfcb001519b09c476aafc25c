@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config:ProjectConfig xmlns:config="http://www.tibco.com/XPD/projectConfig">
+  <projectDetails id="bw_5x_sample_jms_queueReceiver">
+    <globalDestinations/>
+  </projectDetails>
+  <config:assetTypes id="com.tibco.xpd.asset.wsdl"/>
+  <config:assetTypes id="com.tibco.bw.process.asset"/>
+  <config:assetTypes id="com.tibco.amx.zion.resource.asset"/>
+  <config:assetTypes id="com.tibco.amx.zion.schema.asset"/>
+  <config:specialFolders>
+    <config:folder id="_M6OmoMvPEeW036J9GD7hWA" kind="wsdl" location="Service Descriptors"/>
+    <config:folder id="_M7RvgMvPEeW036J9GD7hWA" kind="com.tibco.bw.process.folder" location="Processes"/>
+    <config:folder id="_M7RvgcvPEeW036J9GD7hWA" kind="com.tibco.amx.zion.resource" location="Resources"/>
+    <config:folder id="_M7RvgsvPEeW036J9GD7hWA" kind="com.tibco.amx.zion.schema" location="Schemas"/>
+  </config:specialFolders>
+</config:ProjectConfig>

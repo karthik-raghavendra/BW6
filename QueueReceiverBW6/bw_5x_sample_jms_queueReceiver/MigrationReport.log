@@ -1,0 +1,34 @@
+Migrating Business Works 5.x projects to version 6 using arguments:: 
+[Target Project Directory: Z:\Karthik-BW-Workspace\QueueReceiverBW6/bw_5x_sample_jms_queueReceiver ]
+[Source Project Directory: Z:/Karthik-BW-Workspace/bw.5x.sample.jms.queueReceiver ]
+[Project Name: bw_5x_sample_jms_queueReceiver ]
+
+2016/02/05 06:08:21 [INFO] Creating JMS Shared Resource for URIZ:/Karthik-BW-Workspace/QueueReceiverBW6/bw_5x_sample_jms_queueReceiver/TIBCO_EMS_JMS_Connection.sharedjmscon
+2016/02/05 06:08:21 [INFO] Migrating JMS Queue Receiver Event Source activity with name JMS Queue Receiver
+2016/02/05 06:08:21 [INFO] Write to Log activity "Log" migration tasks :
+2016/02/05 06:08:21 [INFO] Creating WriteToLog Activity
+2016/02/05 06:08:21 [INFO] Migrating WriteToLog Role: User
+2016/02/05 06:08:21 [INFO] Migrating WriteToLog SuppressJobInfo: false
+2016/02/05 06:08:21 [INFO] Migrating Reply To JMS Activity activity with name Reply to JMS Message
+2016/02/05 06:08:21 [INFO] =================================================
+2016/02/05 06:08:21 [INFO] Project: bw.5x.sample.jms.queueReceiver (Z:/Karthik-BW-Workspace/bw.5x.sample.jms.queueReceiver)
+2016/02/05 06:08:21 [INFO] Migration Statistics:
+	Total Processes = 1
+	Migrated Processes = 1
+
+
+Project Migration Complete
+2016/02/05 06:08:21 [INFO] =================================================
+
+------------------ Migration Statistics ----------------
+
+Project Migration Time [Millisecond]: 8828
+
+Process Migration Time [Millisecond]
+1. Z:/Karthik-BW-Workspace/bw.5x.sample.jms.queueReceiver/QueueReceiver.process: 1515
+
+Artifacts Migrated [Count]
+1. Process Migrated:1
+2. WSDL Migrated:0
+3. Schema Migrated:0
+4. XSLT Migrated:0

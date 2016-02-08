@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config:ProjectConfig xmlns:config="http://www.tibco.com/XPD/projectConfig">
+  <projectDetails id="com.example.myfirstproject">
+    <globalDestinations/>
+  </projectDetails>
+  <config:specialFolders>
+    <config:folder id="_kKmRUcXmEeWz5v6D_mBN7g" kind="wsdl" location="Service Descriptors"/>
+  </config:specialFolders>
+</config:ProjectConfig>

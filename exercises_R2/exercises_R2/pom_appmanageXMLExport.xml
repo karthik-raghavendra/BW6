@@ -1,0 +1,37 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>appmanageXMLExport</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>1.2.1</version>
+      <executions>
+          <execution>
+            <id>xmlExport</id>
+            <phase>compile</phase>
+             <goals>
+               <goal>exec</goal>
+             </goals>
+          </execution>
+      </executions>
+      <configuration>
+          <executable>${appManage}</executable>
+          <arguments>
+              <argument>-export</argument>
+              <argument>-ear</argument>
+              <argument>${tibco.deploy.ArchiveFileName}</argument>
+              <argument>-out</argument>
+              <argument>${tibco.deploy.XMLFileName}</argument>
+          </arguments>
+          <workingDirectory>${tibco.tra.home}/bin</workingDirectory>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+</project>

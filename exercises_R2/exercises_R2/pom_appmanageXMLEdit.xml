@@ -1,0 +1,39 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.myapp</groupId>
+  <artifactId>appmanageXMLEdit</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>1.2.1</version>
+      <executions>
+          <execution>
+            <id>deployStart</id>
+            <phase>verify</phase>
+             <goals>
+               <goal>exec</goal>
+             </goals>
+          </execution>
+      </executions>
+      <configuration>
+          <executable>${appManage}</executable>
+          <arguments>
+              <argument>--propVar</argument>
+              <argument>machine</argument>
+              <argument>LP-1CC1DE9F81E3</argument>
+              <argument>-deployconfig</argument>
+              <argument>D:\projects\ngad\tibco\exercises\EAR\QueryBookService.xml</argument>
+              <argument>-ear</argument>
+              <argument>D:\projects\ngad\tibco\exercises\EAR\QueryBookService.ear</argument>
+          </arguments>
+          <workingDirectory>${tibco.tra.home}/bin</workingDirectory>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+</project>

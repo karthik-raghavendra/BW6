@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config:ProjectConfig xmlns:config="http://www.tibco.com/XPD/projectConfig">
+  <projectDetails id="bw_5x_sample_jms_queueReceiver">
+    <globalDestinations/>
+  </projectDetails>
+  <config:assetTypes id="com.tibco.xpd.asset.wsdl"/>
+  <config:specialFolders>
+    <config:folder id="_M6OmoMvPEeW036J9GD7hWA" kind="wsdl" location="Service Descriptors"/>
+  </config:specialFolders>
+</config:ProjectConfig>

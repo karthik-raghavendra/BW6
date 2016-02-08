@@ -1,0 +1,47 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>appmanageXMLDeploy</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>1.2.1</version>
+      <executions>
+          <execution>
+            <id>xmlDeploy</id>
+            <phase>compile</phase>
+             <goals>
+               <goal>exec</goal>
+             </goals>
+          </execution>
+      </executions>
+      <configuration>
+          <executable>${appManage}</executable>
+          <arguments>
+              <argument>-deploy</argument>
+              <argument>-app</argument>
+              <argument>${tibco.deploy.ServiceLocation}</argument>
+              <argument>--propFile</argument>
+              <argument>${tibco.tra.home}${file.separator}bin${file.separator}AppManage.tra</argument>
+              <argument>-domain</argument>
+              <argument>${tibco.DOMAIN}</argument>
+              <argument>-user</argument>
+              <argument>${tibco.DOMAIN.user}</argument>
+              <argument>-pw</argument>
+              <argument>${tibco.DOMAIN.password}</argument>
+              <argument>-deployconfig</argument>
+              <argument>${tibco.deploy.deployXMLFileName}</argument>
+              <argument>-ear</argument>
+              <argument>${tibco.deploy.ArchiveFileName}</argument>
+          </arguments>
+          <workingDirectory></workingDirectory>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+</project>

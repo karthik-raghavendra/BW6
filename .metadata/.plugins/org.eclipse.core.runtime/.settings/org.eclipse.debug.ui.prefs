@@ -1,0 +1,6 @@
+com.tibco.bw.core.design.debug.ui.launch.existingApplications=MyFirstProject.application/Test/
+com.tibco.bw.core.design.debug.ui.launch.selectedApplications=MyFirstProject.application/Test/
+com.tibco.bw.core.design.debug.ui.launch.selectedModules=MyFirstProject/Test.module/
+eclipse.preferences.version=1
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
+preferredTargets=default\:default|

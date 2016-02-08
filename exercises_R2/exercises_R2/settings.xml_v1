@@ -1,0 +1,20 @@
+ <settings>
+ <profiles>
+   <profile>
+     <id>tibco_dev_home</id>
+     <properties>
+         <tibco.home>C\:/tibco</tibco.home>
+         <tibco.tra.home>${tibco.home}/tra/5.9</tibco.tra.home>
+         <buildEAR>${tibco.tra.home}/bin/buildear.exe</buildEAR>
+         <appManage>${tibco.tra.home}/bin/AppManage.exe</appManage>
+         <serviceName>QueryBookService</serviceName>
+         <tibco.deployxml.ArchiveFileName>D:\projects\ngad\tibco\maven\exercises\EAR\QueryBookService.ear</tibco.deployxml.ArchiveFileName>
+         <domain>TIBCO_DEV</domain>
+     </properties>
+   </profile>
+  </profiles>
+ 
+  <activeProfiles>
+    <activeProfile>tibco_dev_home</activeProfile>
+  </activeProfiles>
+</settings>

@@ -1,0 +1,8 @@
+<field>
+     <name>HTTP/Server</name>
+     <value>${Server}</value>
+</field>
+<field>
+     <name>HTTP/Port</name>
+     <value>${Port}</value>
+</field>

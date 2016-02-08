@@ -1,0 +1,29 @@
+Hi,
+
+Please find attached the maven POMs, to build and deploy tibco projects.
+
+This release adds the following features to the previous Release.
++ The key feature of token replacement to generate deployment XML file is complete. The 'pom_configXML_Replace.xml' uses token tokenValueMap  feature of Maven to search & replace variables enclosed within # #, to their values, if it is defined in the properties file in the form.
+variable=value
++ Used variable for the commands defined in the poms, to enhance portability.
+  Variables are defined in settings.xml, in the DEV profile. Similarly we can have different profiles for each environment.
++ Using file separator, to make the POMs portable. I tried in some POMs and it is working. This has to be implemented in 3-4 POMs.
+
+Some of the things, that has to be done, which I can think of on the top of my mind.
+1. Addition to version control.
+2. Add versioning support in the POM files.
+3. Add encryption so that the POM files can be released as a password protected jar file. This will ensure the Maven code is not seen.
+4. Jenkins Integration.
+
+I have tried to make it portable to Linux. The use of the file separator should facilitate this.
+However, there might be some changes to the POMs.
+
+Code review has not been done. Nagashree helped me in some of the POCs for execution of commands and in token replacement.
+
+Aniket, we can have a session to walk you through the code.
+
+Thanks
+-Raghu
+
+
+

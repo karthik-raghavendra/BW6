@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="421" localization="OSGI-INF/l10n/bundle" name="MyFirstProject Application" project="MyFirstProject.application" provider="TIBCO Software Inc."/>
+	<bundle bundleID="420" localization="OSGI-INF/l10n/bundle" name="MyFirstProject Module" project="MyFirstRestProject" provider="TIBCO Software Inc."/>
+	<bundle bundleID="425" localization="OSGI-INF/l10n/bundle" name="Bw_5x_sample_jms_queueReceiver Application" project="bw_5x_sample_jms_queueReceiver.application" provider="TIBCO Software Inc."/>
+	<bundle bundleID="426" localization="OSGI-INF/l10n/bundle" name="MyFirstProject Module" project="MyFirstProject" provider="TIBCO Software Inc."/>
+	<bundle bundleID="422" localization="OSGI-INF/l10n/bundle" name="Test Module" project="Test.module" provider="TIBCO Software Inc."/>
+	<bundle bundleID="424" localization="OSGI-INF/l10n/bundle" name="bw_5x_sample_jms_queueReceiver" project="bw_5x_sample_jms_queueReceiver" provider="TIBCO Software Inc.">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="423" localization="OSGI-INF/l10n/bundle" name="Test" project="Test" provider="TIBCO Software Inc."/>
+</map>

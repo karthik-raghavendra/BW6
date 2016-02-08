@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='Test.module' version='1.0.0.201602080331' singleton='false'>
+    <update id='Test.module' range='[0.0.0,1.0.0.201602080331)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Test Module'/>
+      <property name='org.eclipse.equinox.p2.provider' value='TIBCO Software Inc.'/>
+      <property name='maven-groupId' value='com.tibco.bw'/>
+      <property name='maven-artifactId' value='Test.module'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='Test.module' version='1.0.0.201602080331'/>
+      <provided namespace='osgi.bundle' name='Test.module' version='1.0.0.201602080331'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='Test.module' version='1.0.0.201602080331'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: Test.module&#xA;Bundle-Version: 1.0.0.201602080331&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>
